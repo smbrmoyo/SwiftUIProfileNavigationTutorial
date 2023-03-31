@@ -26,6 +26,7 @@
 		04A7554529D6C29A00E869A9 /* FollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554429D6C29A00E869A9 /* FollowingView.swift */; };
 		04A7554729D6C39300E869A9 /* ProfileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554629D6C39300E869A9 /* ProfileModifier.swift */; };
 		04A7554929D6C47A00E869A9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554829D6C47A00E869A9 /* Route.swift */; };
+		04A7554B29D6C76C00E869A9 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554A29D6C76C00E869A9 /* UIState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		04A7554429D6C29A00E869A9 /* FollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingView.swift; sourceTree = "<group>"; };
 		04A7554629D6C39300E869A9 /* ProfileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModifier.swift; sourceTree = "<group>"; };
 		04A7554829D6C47A00E869A9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		04A7554A29D6C76C00E869A9 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				044B3DE129D698D5008329CB /* User.swift */,
 				04A7554829D6C47A00E869A9 /* Route.swift */,
+				04A7554A29D6C76C00E869A9 /* UIState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				044B3DE929D69ADD008329CB /* ViewModel.swift in Sources */,
 				044B3DE729D699CC008329CB /* ProfileView.swift in Sources */,
 				04A7553429D6B5B400E869A9 /* ProfileEditButtonView.swift in Sources */,
+				04A7554B29D6C76C00E869A9 /* UIState.swift in Sources */,
 				044B3DD429D69846008329CB /* ContentView.swift in Sources */,
 				044B3DD229D69846008329CB /* SwiftUIProfileNavigationApp.swift in Sources */,
 				044B3DEB29D69BE4008329CB /* ProfleHeader.swift in Sources */,

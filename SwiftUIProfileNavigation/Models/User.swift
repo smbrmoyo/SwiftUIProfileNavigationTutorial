@@ -19,7 +19,7 @@ struct User: Identifiable, Equatable {
     static var mockUser = User(id: "lebronjames@gmail.com", displayName: "LeBron James", username: "@kingjames")
         
     static var mockAllUsers = [User(id: "anthonydavis@gmail.com", displayName: "Anthony Davis", username: "@thebrow"),
-                           User(id: "lerbonjames@gmail.com", displayName: "LeBron James", username: "@kingjames"),
+                           User(id: "lebronjames@gmail.com", displayName: "LeBron James", username: "@kingjames"),
                            User(id: "austinreaves@gmail.com", displayName: "Austin Reaves", username: "@ar15"),
                            User(id: "dangelorussel@gmail.com", displayName: "D'Angelo Russel", username: "@dlo")]
     

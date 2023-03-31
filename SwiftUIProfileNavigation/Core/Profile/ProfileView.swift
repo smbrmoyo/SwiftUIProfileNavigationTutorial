@@ -16,21 +16,25 @@ struct ProfileView: View {
         NavigationStack(path: $path) {
             VStack {
                 
-                ProfileHeader(user: vm.currentUser)
-                
-                ProfileInfoView()
-                
-                ProfileFollowCountView(followers: vm.currentUser.followers,
-                                       following: vm.currentUser.following)
-                
-                ProfileEditButtonView()
-                
-                ProfileFilterBarView()
-                
-                ProfileListView()
+                if vm.profileUIState == .loading {
+                    ProgressView()
+                } else {
+                    ProfileHeader(user: vm.currentUser)
+                    
+                    ProfileInfoView()
+                    
+                    ProfileFollowCountView(followers: vm.currentUser.followers,
+                                           following: vm.currentUser.following)
+                    
+                    ProfileEditButtonView()
+                    
+                    ProfileFilterBarView()
+                    
+                    ProfileListView()
+                }
                 
             }
-            .modifier(ProfileModifier())
+            .modifier(ProfileModifier(vm: vm))
         }
     }
 }

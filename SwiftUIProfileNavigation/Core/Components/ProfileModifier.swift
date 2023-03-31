@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileModifier: ViewModifier {
     
+    @ObservedObject var vm: ViewModel
+    
     func body(content: Content) -> some View {
         content
             .navigationBarTitleDisplayMode(.inline)
@@ -34,11 +36,14 @@ struct ProfileModifier: ViewModifier {
             .navigationDestination(for: Route.self) { route in
                 switch route {
                 case .followers:
-                    FollowersView(followers: User.mockAllUsers)
+                    FollowersView(followers: vm.currentUser.followers)
                     
                 case .following:
-                    FollowingView(following: User.mockAllUsers)
+                    FollowingView(following: vm.currentUser.following)
                 }
+            }
+            .task {
+                vm.fetchProfile()
             }
     }
     
