@@ -16,20 +16,24 @@ struct ProfileFollowCountView: View {
         HStack {
             
             Spacer()
-                            
+            
+            NavigationLink(value: Route.followers){
                 VStack {
                     Text("\(followers.count)")
                     Text("Followers")
                 }
                 .foregroundColor(.black)
+            }
             
             Spacer()
             
+            NavigationLink(value: Route.followers){
                 VStack {
                     Text("\(following.count)")
                     Text("Following")
                 }
                 .foregroundColor(.black)
+            }
             
             Spacer()
             

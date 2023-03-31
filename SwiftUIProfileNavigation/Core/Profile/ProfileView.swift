@@ -10,23 +10,27 @@ import SwiftUI
 struct ProfileView: View {
     
     @StateObject var vm: ViewModel = ViewModel()
+    @State var path = NavigationPath()
     
     var body: some View {
-        VStack {
-            
-            ProfileHeader(user: vm.currentUser)
-            
-            ProfileInfoView()
-                        
-            ProfileFollowCountView(followers: vm.currentUser.followers,
-                                   following: vm.currentUser.following)
-            
-            ProfileEditButtonView()
-            
-            ProfileFilterBarView()
-            
-            ProfileListView()
-            
+        NavigationStack(path: $path) {
+            VStack {
+                
+                ProfileHeader(user: vm.currentUser)
+                
+                ProfileInfoView()
+                
+                ProfileFollowCountView(followers: vm.currentUser.followers,
+                                       following: vm.currentUser.following)
+                
+                ProfileEditButtonView()
+                
+                ProfileFilterBarView()
+                
+                ProfileListView()
+                
+            }
+            .modifier(ProfileModifier())
         }
     }
 }
