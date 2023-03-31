@@ -27,6 +27,12 @@
 		04A7554729D6C39300E869A9 /* ProfileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554629D6C39300E869A9 /* ProfileModifier.swift */; };
 		04A7554929D6C47A00E869A9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554829D6C47A00E869A9 /* Route.swift */; };
 		04A7554B29D6C76C00E869A9 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554A29D6C76C00E869A9 /* UIState.swift */; };
+		04A7554D29D6CB9800E869A9 /* OtherProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554C29D6CB9800E869A9 /* OtherProfileView.swift */; };
+		04A7554F29D6CD4F00E869A9 /* OtherProfileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7554E29D6CD4F00E869A9 /* OtherProfileModifier.swift */; };
+		04A7555129D6CF3600E869A9 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7555029D6CF3600E869A9 /* FollowButton.swift */; };
+		04A7555529D6D4FA00E869A9 /* OtherFollowersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7555429D6D4FA00E869A9 /* OtherFollowersView.swift */; };
+		04A7555729D6D50500E869A9 /* OtherFollowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7555629D6D50500E869A9 /* OtherFollowingView.swift */; };
+		04A7555929D6D55200E869A9 /* OtherFollowCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7555829D6D55200E869A9 /* OtherFollowCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,12 @@
 		04A7554629D6C39300E869A9 /* ProfileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModifier.swift; sourceTree = "<group>"; };
 		04A7554829D6C47A00E869A9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		04A7554A29D6C76C00E869A9 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		04A7554C29D6CB9800E869A9 /* OtherProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileView.swift; sourceTree = "<group>"; };
+		04A7554E29D6CD4F00E869A9 /* OtherProfileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherProfileModifier.swift; sourceTree = "<group>"; };
+		04A7555029D6CF3600E869A9 /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		04A7555429D6D4FA00E869A9 /* OtherFollowersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowersView.swift; sourceTree = "<group>"; };
+		04A7555629D6D50500E869A9 /* OtherFollowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowingView.swift; sourceTree = "<group>"; };
+		04A7555829D6D55200E869A9 /* OtherFollowCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFollowCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,8 @@
 		044B3DE029D698A4008329CB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				04A7555329D6D4DC00E869A9 /* OtherFollowers */,
+				04A7555229D6D4CD00E869A9 /* OtherFollowing */,
 				04A7554329D6C28C00E869A9 /* Following */,
 				04A7554029D6C20C00E869A9 /* Followers */,
 				044B3DE529D699B7008329CB /* Components */,
@@ -137,6 +151,7 @@
 		044B3DE429D6997D008329CB /* OtherProfile */ = {
 			isa = PBXGroup;
 			children = (
+				04A7554C29D6CB9800E869A9 /* OtherProfileView.swift */,
 			);
 			path = OtherProfile;
 			sourceTree = "<group>";
@@ -153,6 +168,9 @@
 				04A7553B29D6B9AB00E869A9 /* ProfileListView.swift */,
 				04A7553E29D6BBFA00E869A9 /* ProfileFilterBarView.swift */,
 				04A7554629D6C39300E869A9 /* ProfileModifier.swift */,
+				04A7554E29D6CD4F00E869A9 /* OtherProfileModifier.swift */,
+				04A7555029D6CF3600E869A9 /* FollowButton.swift */,
+				04A7555829D6D55200E869A9 /* OtherFollowCount.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -171,6 +189,22 @@
 				04A7554429D6C29A00E869A9 /* FollowingView.swift */,
 			);
 			path = Following;
+			sourceTree = "<group>";
+		};
+		04A7555229D6D4CD00E869A9 /* OtherFollowing */ = {
+			isa = PBXGroup;
+			children = (
+				04A7555629D6D50500E869A9 /* OtherFollowingView.swift */,
+			);
+			path = OtherFollowing;
+			sourceTree = "<group>";
+		};
+		04A7555329D6D4DC00E869A9 /* OtherFollowers */ = {
+			isa = PBXGroup;
+			children = (
+				04A7555429D6D4FA00E869A9 /* OtherFollowersView.swift */,
+			);
+			path = OtherFollowers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,20 +281,26 @@
 				044B3DEF29D69F4B008329CB /* ProfileFollowCountView.swift in Sources */,
 				044B3DE929D69ADD008329CB /* ViewModel.swift in Sources */,
 				044B3DE729D699CC008329CB /* ProfileView.swift in Sources */,
+				04A7554D29D6CB9800E869A9 /* OtherProfileView.swift in Sources */,
+				04A7555129D6CF3600E869A9 /* FollowButton.swift in Sources */,
 				04A7553429D6B5B400E869A9 /* ProfileEditButtonView.swift in Sources */,
 				04A7554B29D6C76C00E869A9 /* UIState.swift in Sources */,
 				044B3DD429D69846008329CB /* ContentView.swift in Sources */,
 				044B3DD229D69846008329CB /* SwiftUIProfileNavigationApp.swift in Sources */,
 				044B3DEB29D69BE4008329CB /* ProfleHeader.swift in Sources */,
+				04A7555729D6D50500E869A9 /* OtherFollowingView.swift in Sources */,
 				04A7553829D6B71D00E869A9 /* PostRowView.swift in Sources */,
+				04A7554F29D6CD4F00E869A9 /* OtherProfileModifier.swift in Sources */,
 				04A7554929D6C47A00E869A9 /* Route.swift in Sources */,
 				044B3DED29D69EF3008329CB /* ProfileInfoView.swift in Sources */,
 				04A7553A29D6B7CC00E869A9 /* UserRowView.swift in Sources */,
 				04A7554229D6C21900E869A9 /* FollowersView.swift in Sources */,
 				044B3DE229D698D5008329CB /* User.swift in Sources */,
 				04A7554529D6C29A00E869A9 /* FollowingView.swift in Sources */,
+				04A7555529D6D4FA00E869A9 /* OtherFollowersView.swift in Sources */,
 				04A7553C29D6B9AB00E869A9 /* ProfileListView.swift in Sources */,
 				04A7553F29D6BBFA00E869A9 /* ProfileFilterBarView.swift in Sources */,
+				04A7555929D6D55200E869A9 /* OtherFollowCount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,7 @@ struct ProfileView: View {
                 }
                 
             }
-            .modifier(ProfileModifier(vm: vm))
+            .modifier(ProfileModifier(vm: vm, path: $path))
         }
     }
 }

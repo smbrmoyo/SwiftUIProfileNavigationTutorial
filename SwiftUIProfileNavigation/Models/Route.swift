@@ -7,7 +7,10 @@
 
 import Foundation
 
-enum Route {
+enum Route: Hashable {
     case followers
     case following
+    case otherFollowers
+    case otherFollowing
+    case otherProfile(String)
 }

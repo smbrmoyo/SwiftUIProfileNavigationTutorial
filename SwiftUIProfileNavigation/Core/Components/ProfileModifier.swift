@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileModifier: ViewModifier {
     
     @ObservedObject var vm: ViewModel
+    @Binding var path: NavigationPath
     
     func body(content: Content) -> some View {
         content
@@ -40,6 +41,16 @@ struct ProfileModifier: ViewModifier {
                     
                 case .following:
                     FollowingView(following: vm.currentUser.following)
+                    
+                case let .otherProfile(otherUserId):
+                    OtherProfileView(vm: vm, otherUserId: otherUserId)
+//                        .id("\(otherUserId)\(path.count)")
+                    
+                case .otherFollowers:
+                    OtherFollowersView(followers: vm.otherUser.followers, path: $path)
+                    
+                case .otherFollowing:
+                    OtherFollowingView(following: vm.otherUser.following, path: $path)
                 }
             }
             .task {
