@@ -11,6 +11,17 @@
 		044B3DD429D69846008329CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DD329D69846008329CB /* ContentView.swift */; };
 		044B3DD629D69847008329CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B3DD529D69847008329CB /* Assets.xcassets */; };
 		044B3DD929D69847008329CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044B3DD829D69847008329CB /* Preview Assets.xcassets */; };
+		044B3DE229D698D5008329CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DE129D698D5008329CB /* User.swift */; };
+		044B3DE729D699CC008329CB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DE629D699CC008329CB /* ProfileView.swift */; };
+		044B3DE929D69ADD008329CB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DE829D69ADD008329CB /* ViewModel.swift */; };
+		044B3DEB29D69BE4008329CB /* ProfleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DEA29D69BE4008329CB /* ProfleHeader.swift */; };
+		044B3DED29D69EF3008329CB /* ProfileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DEC29D69EF3008329CB /* ProfileInfoView.swift */; };
+		044B3DEF29D69F4B008329CB /* ProfileFollowCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B3DEE29D69F4B008329CB /* ProfileFollowCountView.swift */; };
+		04A7553429D6B5B400E869A9 /* ProfileEditButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7553329D6B5B400E869A9 /* ProfileEditButtonView.swift */; };
+		04A7553829D6B71D00E869A9 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7553729D6B71D00E869A9 /* PostRowView.swift */; };
+		04A7553A29D6B7CC00E869A9 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7553929D6B7CC00E869A9 /* UserRowView.swift */; };
+		04A7553C29D6B9AB00E869A9 /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7553B29D6B9AB00E869A9 /* ProfileListView.swift */; };
+		04A7553F29D6BBFA00E869A9 /* ProfileFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7553E29D6BBFA00E869A9 /* ProfileFilterBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +30,18 @@
 		044B3DD329D69846008329CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		044B3DD529D69847008329CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044B3DD829D69847008329CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		044B3DE129D698D5008329CB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		044B3DE629D699CC008329CB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		044B3DE829D69ADD008329CB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		044B3DEA29D69BE4008329CB /* ProfleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfleHeader.swift; sourceTree = "<group>"; };
+		044B3DEC29D69EF3008329CB /* ProfileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoView.swift; sourceTree = "<group>"; };
+		044B3DEE29D69F4B008329CB /* ProfileFollowCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFollowCountView.swift; sourceTree = "<group>"; };
+		04A7553329D6B5B400E869A9 /* ProfileEditButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditButtonView.swift; sourceTree = "<group>"; };
+		04A7553729D6B71D00E869A9 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		04A7553929D6B7CC00E869A9 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		04A7553B29D6B9AB00E869A9 /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		04A7553D29D6BBA500E869A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04A7553E29D6BBFA00E869A9 /* ProfileFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,9 @@
 		044B3DD029D69846008329CB /* SwiftUIProfileNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				04A7553D29D6BBA500E869A9 /* Info.plist */,
+				044B3DE029D698A4008329CB /* Core */,
+				044B3DDF29D6989D008329CB /* Models */,
 				044B3DD129D69846008329CB /* SwiftUIProfileNavigationApp.swift */,
 				044B3DD329D69846008329CB /* ContentView.swift */,
 				044B3DD529D69847008329CB /* Assets.xcassets */,
@@ -65,6 +91,55 @@
 				044B3DD829D69847008329CB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		044B3DDF29D6989D008329CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				044B3DE129D698D5008329CB /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		044B3DE029D698A4008329CB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				044B3DE529D699B7008329CB /* Components */,
+				044B3DE429D6997D008329CB /* OtherProfile */,
+				044B3DE329D69975008329CB /* Profile */,
+				044B3DE829D69ADD008329CB /* ViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		044B3DE329D69975008329CB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				044B3DE629D699CC008329CB /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		044B3DE429D6997D008329CB /* OtherProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherProfile;
+			sourceTree = "<group>";
+		};
+		044B3DE529D699B7008329CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				044B3DEA29D69BE4008329CB /* ProfleHeader.swift */,
+				044B3DEC29D69EF3008329CB /* ProfileInfoView.swift */,
+				044B3DEE29D69F4B008329CB /* ProfileFollowCountView.swift */,
+				04A7553329D6B5B400E869A9 /* ProfileEditButtonView.swift */,
+				04A7553729D6B71D00E869A9 /* PostRowView.swift */,
+				04A7553929D6B7CC00E869A9 /* UserRowView.swift */,
+				04A7553B29D6B9AB00E869A9 /* ProfileListView.swift */,
+				04A7553E29D6BBFA00E869A9 /* ProfileFilterBarView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044B3DEF29D69F4B008329CB /* ProfileFollowCountView.swift in Sources */,
+				044B3DE929D69ADD008329CB /* ViewModel.swift in Sources */,
+				044B3DE729D699CC008329CB /* ProfileView.swift in Sources */,
+				04A7553429D6B5B400E869A9 /* ProfileEditButtonView.swift in Sources */,
 				044B3DD429D69846008329CB /* ContentView.swift in Sources */,
 				044B3DD229D69846008329CB /* SwiftUIProfileNavigationApp.swift in Sources */,
+				044B3DEB29D69BE4008329CB /* ProfleHeader.swift in Sources */,
+				04A7553829D6B71D00E869A9 /* PostRowView.swift in Sources */,
+				044B3DED29D69EF3008329CB /* ProfileInfoView.swift in Sources */,
+				04A7553A29D6B7CC00E869A9 /* UserRowView.swift in Sources */,
+				044B3DE229D698D5008329CB /* User.swift in Sources */,
+				04A7553C29D6B9AB00E869A9 /* ProfileListView.swift in Sources */,
+				04A7553F29D6BBFA00E869A9 /* ProfileFilterBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +356,8 @@
 				DEVELOPMENT_TEAM = 27MXYDTP56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftUIProfileNavigation/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +386,8 @@
 				DEVELOPMENT_TEAM = 27MXYDTP56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = SwiftUIProfileNavigation/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
