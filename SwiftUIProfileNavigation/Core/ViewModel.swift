@@ -58,10 +58,9 @@ class ViewModel: ObservableObject {
     func resetOtherProfile(otherUserId: String) {
         
         if previousUserId != otherUserId {
-            DispatchQueue.main.async {
+            DispatchQueue.main.async(execute: {
                 self.otherProfileUIState = .loading
-                
-            }
+            })
         }
         
     }
