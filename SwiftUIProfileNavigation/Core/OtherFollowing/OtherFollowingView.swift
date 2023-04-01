@@ -37,6 +37,8 @@ struct OtherFollowingView: View {
                 }
             }
         }
+        .navigationTitle("Following")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

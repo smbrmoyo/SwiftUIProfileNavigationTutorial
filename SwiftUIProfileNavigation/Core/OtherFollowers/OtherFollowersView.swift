@@ -38,6 +38,8 @@ struct OtherFollowersView: View {
                 }
             }
         }
+        .navigationTitle("Followers")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
