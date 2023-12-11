@@ -12,7 +12,6 @@ class ViewModel: ObservableObject {
     @Published var currentUser: User = User.emptyUser
     @Published var profileUIState: UIState = .loading
     
-    
     @Published var otherUser: User = User.emptyUser
     @Published var otherProfileUIState: UIState = .loading
     @Published var isFollowing: Bool = true
@@ -58,9 +57,9 @@ class ViewModel: ObservableObject {
     func resetOtherProfile(otherUserId: String) {
         
         if previousUserId != otherUserId {
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 self.otherProfileUIState = .loading
-            })
+            }
         }
         
     }
